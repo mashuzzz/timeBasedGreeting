@@ -1,0 +1,66 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s;
+}
+
+#output {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#changeNameBtn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#changeNameBtn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Динамический фон в зависимости от времени суток */
+.night {
+    background-color: #1a237e;
+    color: #ffffff;
+}
+
+.morning {
+    background-color: #b3e5fc;
+    color: #333;
+}
+
+.day {
+    background-color: #fff9c4;
+    color: #333;
+}
+
+.evening {
+    background-color: #ffcc80;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    #output {
+        font-size: 1.5em;
+    }
+    #changeNameBtn {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
